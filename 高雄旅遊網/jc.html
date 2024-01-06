@@ -1,0 +1,92 @@
+<!DOCTYPE >
+<html >
+<head>
+	<meta charset="utf-8">
+	<title>景點  </title>
+	<link href="css/style.css" type=text/css rel=stylesheet>
+</head>
+<body >
+	<header>
+		<div class="box">
+			<ul>
+				<li>
+					<a href="index.html">
+						<b>高雄旅遊網</b>
+					</a>
+				</li>
+				<li>
+					<a href="jh.html">
+						活動
+					</a>
+				</li>
+				<li>
+					<a href="jd.html">
+						景點
+					</a>
+				</li>
+				<li>
+					<a href="jm.html">
+						食宿
+					</a>
+				</li>
+				<li>
+					<a href="jt.html">
+						交通
+					</a>
+				</li>
+				<li>
+					<a href="jb.html">
+						指南
+					</a>
+				</li>
+				<li>
+					<a href="jc.html">
+						選擇困難?
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="banner">
+	</div>
+	<div class="box">
+		<div class="line"></div>
+		<h1>選擇障礙疑難排解</h1>
+		<ul class="list">
+			
+				<li>
+					<form id="recommendationForm">
+                        <label for="option1"><p class="text">不知道要去哪裡嗎?說不定我們能幫到您：</p></label>
+                        <select id="option1" name="option1">
+                          <!-- 根據需求填充相應的選項 -->
+                          <option value="義大世界購物廣場 統一夢時代購物中心 漢神巨蛋購物廣場">購物</option>
+                          <option value="西子灣海水浴場 旗津海水浴場 旗津遊憩沙灘">海邊</option>
+                          <option value="旗後砲台 鳳儀書院 鳳山歷史教室 高雄市立歷史博物館">歷史古蹟</option>
+                          <option value="瑞豐夜市 六合夜市 鳳山中西路夜市 旗津老街">美食</option>
+                          <option value="駁二藝術特區 光榮碼頭 蓮池潭風景區 旗津渡輪">散步與欣賞風景</option>
+                          <!-- 需要時可新增更多選項 -->
+                        </select>
+                    
+                        <button type="button" onclick="getRecommendations()">確認</button>
+                      </form>
+                    
+                      <div id="recommendations"></div>
+                    
+                      <script>
+                        function getRecommendations() {
+                          // 獲取所選擇的選項
+                          var option1 = document.getElementById('option1').value;
+                    
+                          // TODO: 實現獲取並顯示個性化推薦的邏輯
+                          // 為了簡單起見，你可以在這裡顯示一條消息，或者向服務器發送請求獲取推薦。
+                          var recommendations = "也許您可以考慮來這邊晃晃：" + option1;
+                          document.getElementById('recommendations').innerHTML = recommendations;
+                        }
+                      </script>
+					
+				</li>
+			
+		</ul>
+	</div>
+</body>
+</html>
